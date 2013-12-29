@@ -117,10 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="serialPort.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>126, 17</value>
-  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnComPortRefresh.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7O
+        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA3SAAAN0gFvkv6OAAAAGXRFWHRTb2Z0d2FyZQB3d3cu
+        aW5rc2NhcGUub3Jnm+48GgAAARxJREFUOE+F07FOwlAUxvHCC8DapS+AjGwurCQ0TsbEAZ+GjY2tL+Hk
+        1gkWdhJi4owjDCaGhev/K+eQm9LKTX7RnnO/YOWcJIRwxeligjlW+MEX3jHFAzYoqvtRsIcP6KHN2X4e
+        rmFOhp01TljiFSO8oYR67hiHvfmJoWqO08c39OAuYc7MCr8YxEG7kFs/tvXw2gqLetAudDDGi3lGar1k
+        D/0jbj71Hp1HPDU12+h+lWtq/oczgP7SvRdS6F38vfSOnXrQ7i6gX9Ze2FohljcE9an6VvQw8+LRCk7f
+        a78WHEJzoIeyqrWENTSaLE2YJk0Tp8lTT5OYxeGDNXx222j2e8rE4QLaFm2NtkdbpG3SVmm7tGXatq4H
+        QwjJHwLOXJ/Y0hQ0AAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>

@@ -83,6 +83,12 @@
     <Compile Include="UserControls\ucAnalogOut.Designer.cs">
       <DependentUpon>ucAnalogOut.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ucComSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucComSettings.Designer.cs">
+      <DependentUpon>ucComSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ucDigitalOut.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucAnalogOut.resx">
       <DependentUpon>ucAnalogOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucComSettings.resx">
+      <DependentUpon>ucComSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucDigitalIn.resx">
       <DependentUpon>ucDigitalIn.cs</DependentUpon>
@@ -147,6 +156,9 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
