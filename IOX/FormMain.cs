@@ -32,6 +32,7 @@ using System.Text;
 using System.Windows.Forms;
 
 using IOX.UserControls;
+using System.Reflection;
 
 /*============================================================================*/
 
@@ -67,6 +68,8 @@ namespace IOX
         public FormMain()
         {
             InitializeComponent();
+
+            lblVersion.Text = Application.ProductVersion;
 
             ucCS = new ucComSettings();
             ucCS.Connect += new ucComSettings.ConnectHandler(ucCS_Connect);

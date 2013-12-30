@@ -49,6 +49,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\IOX.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -101,6 +102,7 @@
     <Compile Include="UserControls\ucDigitalIn.Designer.cs">
       <DependentUpon>ucDigitalIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="VersionInfo.cs" />
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,10 +164,16 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
+       Other similar extension points exist, see Microsoft.Common.targets.-->
+  <Import Project="$(SolutionDir)Tools\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets" />
+  <UsingTask AssemblyFile="$(SolutionDir)Tools\GitVersion.dll" TaskName="GitVersion" />
   <Target Name="BeforeBuild">
+    <GitVersion LocalPath="$(MSBuildProjectDirectory)">
+      <Output TaskParameter="Version" PropertyName="Version" />
+      <Output TaskParameter="InfoVersion" PropertyName="InfoVersion" />
+    </GitVersion>
+    <AssemblyInfo CodeLanguage="CS" OutputFile="VersionInfo.cs" AssemblyVersion="$(Version)" AssemblyFileVersion="$(Version)" AssemblyInformationalVersion="$(InfoVersion)"/>
   </Target>
   <Target Name="AfterBuild">
   </Target>
-  -->
 </Project>

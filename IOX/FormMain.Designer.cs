@@ -35,13 +35,17 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.lblConnectState = new System.Windows.Forms.ToolStripStatusLabel();
             this.serialPort = new System.IO.Ports.SerialPort(this.components);
+            this.lblVersion = new System.Windows.Forms.ToolStripStatusLabel();
+            this.ssSpacer = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lblConnectState});
+            this.lblConnectState,
+            this.ssSpacer,
+            this.lblVersion});
             this.statusStrip.Location = new System.Drawing.Point(0, 510);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(875, 22);
@@ -55,6 +59,19 @@
             this.lblConnectState.Name = "lblConnectState";
             this.lblConnectState.Size = new System.Drawing.Size(220, 17);
             this.lblConnectState.Text = "Disconnected";
+            // 
+            // lblVersion
+            // 
+            this.lblVersion.AutoSize = false;
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(100, 17);
+            this.lblVersion.Text = "bla";
+            // 
+            // ssSpacer
+            // 
+            this.ssSpacer.Name = "ssSpacer";
+            this.ssSpacer.Size = new System.Drawing.Size(540, 17);
+            this.ssSpacer.Spring = true;
             // 
             // FormMain
             // 
@@ -78,6 +95,8 @@
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel lblConnectState;
         private System.IO.Ports.SerialPort serialPort;
+        private System.Windows.Forms.ToolStripStatusLabel ssSpacer;
+        private System.Windows.Forms.ToolStripStatusLabel lblVersion;
 
     }
 }
